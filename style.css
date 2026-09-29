@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #eee;
+    margin-bottom: 25px;
+}
+
+/* Flashcard */
+
+.flashcard {
+    background: white;
+    min-height: 330px;
+
+    border-radius: 20px;
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.question {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+
+    margin-bottom: 25px;
+}
+
+.answer {
+    display: none;
+
+    font-size: 20px;
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+button {
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Show answer */
+
+#showAnswerBtn {
+    background: #667eea;
+    color: white;
+}
+
+#showAnswerBtn:hover {
+    background: #5568d8;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.navigation button {
+    background: white;
+    color: #555;
+}
+
+#cardNumber {
+    color: white;
+    font-weight: bold;
+}
+
+/* Management */
+
+.management {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.management button {
+    background: white;
+    color: #333;
+}
+
+.management button:hover {
+    background: #eee;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .question {
+        font-size: 22px;
+    }
+
+    .flashcard {
+        min-height: 300px;
+    }
+
+    .navigation {
+        gap: 10px;
+    }
+
+    .navigation button {
+        padding: 10px;
+    }
+}
